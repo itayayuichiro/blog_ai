@@ -17,9 +17,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: |
-          date > generated.txt
-          git config user.name  "thaim"
-          git config user.email "thaim@example.com"
+          date > ./docs/generated.txt
+          git config user.name  "github-action"
+          git config user.email "github-action@example.com"
           git add .
           git commit -m "generated"
           git push
