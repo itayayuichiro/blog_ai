@@ -1,0 +1,13 @@
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: |
+          date > generated.txt
+          git config user.name  "thaim"
+          git config user.email "thaim@example.com"
+          git add .
+          git commit -m "generated"
+          git push
