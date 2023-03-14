@@ -15,9 +15,10 @@ jobs:
       security-events: write
       statuses: write
     steps:
+      - uses: actions/checkout@v3
       - uses: docker://pandoc/core:2.9
-        with:
-          args: sh md_to_html.sh
+      - run: |
+          sh md_to_html.sh
       - uses: actions/checkout@v3
       - run: |
           git config user.name  "github-action"
