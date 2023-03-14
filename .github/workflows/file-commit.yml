@@ -15,9 +15,11 @@ jobs:
       security-events: write
       statuses: write
     steps:
+      - uses: docker://pandoc/core:2.9
+        with:
+          args: sh md_to_html.sh
       - uses: actions/checkout@v3
       - run: |
-          date > ./docs/generated.txt
           git config user.name  "github-action"
           git config user.email "github-action@example.com"
           git add .
