@@ -16,13 +16,7 @@ jobs:
       statuses: write
     steps:
       - uses: actions/checkout@v3
-      - uses: docker://pandoc/core:2.9
       - run: |
-          sh md_to_html.sh
-      - uses: actions/checkout@v3
-      - run: |
+          sudo apt-get install -y pandoc
           git config user.name  "github-action"
           git config user.email "github-action@example.com"
-          git add .
-          git commit -m "generated"
-          git push
