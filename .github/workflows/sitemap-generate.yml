@@ -1,7 +1,7 @@
 name: sitemap-generate
-on: push
-  # schedule:
-  #   - cron: '0 * * * *'
+on:
+  schedule:
+    - cron: '0 * * * *'
 
 jobs:
   build:
