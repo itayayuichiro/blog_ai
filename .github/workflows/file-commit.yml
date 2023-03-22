@@ -17,11 +17,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: |
-          ruby -v
           sudo apt-get install -y pandoc
           sh md_to_html.sh
+          bundle install
+          bundle exec ruby crawler.rb
           git config user.name  "github-action"
           git config user.email "github-action@example.com"
           git add ./docs
+          git add ./md
           git commit -m "generated"
           git push
