@@ -27,4 +27,5 @@ jobs:
           git config user.email "github-action@example.com"
           git add ./docs
           git commit -m "sitemap update"
+          git pull
           git push
