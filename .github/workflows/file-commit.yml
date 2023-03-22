@@ -19,7 +19,8 @@ jobs:
       - run: |
           sudo apt-get install -y pandoc
           sh md_to_html.sh
-          bundle install
+          gem install bundler
+          bundle install --path=.bundle
           bundle exec ruby crawler.rb
           git config user.name  "github-action"
           git config user.email "github-action@example.com"
