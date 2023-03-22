@@ -16,12 +16,14 @@ jobs:
       statuses: write
     steps:
       - uses: actions/checkout@v3
+        with:
+          ruby-version: '3.1'
       - run: |
           sudo apt-get install -y pandoc
           sh md_to_html.sh
-          gem install bundler
-          bundle install --path=.bundle
+          bundle install
           bundle exec ruby crawler.rb
+          pandoc -f markdown -t html --template=mytemplate "./md/index.md" > "./docs/index.html"
           git config user.name  "github-action"
           git config user.email "github-action@example.com"
           git add ./docs
