@@ -1,7 +1,7 @@
 ---
 title: デートって何？初めての方にわかりやすく解説します！
 ---
-![alt](https://2.bp.blogspot.com/-qa4R5lVIMXc/Vp4onrxNhOI/AAAAAAAA3Oc/ykL1Dnu-bzU/s800/renai3_young.png)
+![](https://2.bp.blogspot.com/-qa4R5lVIMXc/Vp4onrxNhOI/AAAAAAAA3Oc/ykL1Dnu-bzU/s800/renai3_young.png)
 
 デートとは、異性との関係性を深めるために、一緒に過ごす時間のことを指します。一般的には、食事や映画鑑賞、散歩など、お互いが楽しめる場所やアクティビティを共有することが多いです。
 
